@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The V by Jesselton Infographic - Mobile Version</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Base styles for mobile-first approach */
+        .text-xxs { font-size: 0.6rem; } /* 10px */
+        .text-xs { font-size: 0.75rem; } /* 12px */
+        .text-sm { font-size: 0.875rem; } /* 14px */
+        .text-base { font-size: 1rem; } /* 16px */
+        .text-lg { font-size: 1.125rem; } /* 18px */
+        .text-xl { font-size: 1.25rem; } /* 20px */
+        .text-2xl { font-size: 1.5rem; } /* 24px */
+        .text-3xl { font-size: 1.875rem; } /* 30px */
+        .text-4xl { font-size: 2.25rem; } /* 36px */
+
+        /* Responsive adjustments for larger screens */
+        @media (min-width: 640px) { /* sm breakpoint */
+            .sm\:text-xs { font-size: 0.75rem; }
+            .sm\:text-sm { font-size: 0.875rem; }
+            .sm\:text-base { font-size: 1rem; }
+            .sm\:text-lg { font-size: 1.125rem; }
+            .sm\:text-xl { font-size: 1.25rem; }
+            .sm\:text-2xl { font-size: 1.5rem; }
+            .sm\:text-3xl { font-size: 1.875rem; }
+            .sm\:text-4xl { font-size: 2.25rem; }
+            .sm\:text-5xl { font-size: 3rem; }
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .md\:text-base { font-size: 1rem; }
+            .md\:text-lg { font-size: 1.125rem; }
+            .md\:text-xl { font-size: 1.25rem; }
+            .md\:text-2xl { font-size: 1.5rem; }
+            .md\:text-3xl { font-size: 1.875rem; }
+            .md\:text-4xl { font-size: 2.25rem; }
+            .md\:text-5xl { font-size: 3rem; }
+            .md\:text-6xl { font-size: 3.75rem; }
+        }
+
+        /* Custom styling for mobile table cards */
+        .mobile-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-bottom: 0.75rem; /* Slightly less margin for tighter mobile layout */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+        }
+        .mobile-card-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0; /* Adjusted padding */
+            border-bottom: 1px dashed #cbd5e0;
+            font-size: 0.875rem; /* sm text size for mobile card items */
+        }
+        .mobile-card-item:last-child {
+            border-bottom: none;
+        }
+        .mobile-card-label {
+            font-weight: 600;
+            color: #2d3748;
+            flex-basis: 48%; /* Adjusted basis */
+            text-align: left;
+        }
+        .mobile-card-value {
+            text-align: right;
+            flex-basis: 52%; /* Adjusted basis */
+            color: #4a5568;
+            font-size: 0.875rem; /* sm text size for mobile card items */
+        }
+        .mobile-card-value.positive-flow {
+            color: #059669; /* Emerald 600 */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="font-inter bg-gradient-to-br from-cyan-50 to-teal-100 text-gray-800 min-h-screen">
+
+    <!-- Hero Section -->
+    <section class="relative h-64 sm:h-96 md:h-[500px] lg:h-[600px] overflow-hidden rounded-b-3xl shadow-lg">
+        <img
+            src="https://placehold.co/1200x600/0A2342/FFFFFF?text=The+V+by+Jesselton+-+Likas+Bay"
+            alt="The V by Jesselton - Likas Bay"
+            class="absolute inset-0 w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-teal-900 to-transparent flex flex-col items-center justify-center p-4 text-center">
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg mb-2 sm:mb-4">
+                💎 The V by Jesselton 💎
+            </h1>
+            <p class="text-lg sm:text-2xl md:text-3xl text-white font-semibold italic drop-shadow-md">
+                Where the City Begins: Likas Bay's New Landmark<br><span class="text-base sm:text-xl font-normal">城市起点，里卡士湾新地标</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="container mx-auto px-4 py-8 md:py-16">
+        <div class="bg-white rounded-2xl shadow-xl p-4 md:p-10 border border-teal-200">
+            <h2 class="text-2xl sm:text-4xl font-bold text-teal-800 mb-4 text-center">
+                Introducing a New Era of Seafront Living<br><span class="text-xl sm:text-3xl font-semibold">开启滨海生活新纪元</span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-base sm:text-lg">
+                <div class="flex items-center p-3 bg-cyan-100 rounded-lg shadow-sm">
+                    <span class="text-cyan-600 mr-2 flex-shrink-0 text-xl sm:text-2xl">🏠</span>
+                    <p><span class="font-semibold">10-acre</span> integrated development<br><span class="text-sm sm:text-base">10英亩综合发展</span></p>
+                </div>
+                <div class="flex items-center p-3 bg-cyan-100 rounded-lg shadow-sm">
+                    <span class="text-cyan-600 mr-2 flex-shrink-0 text-xl sm:text-2xl">🏢</span>
+                    <p><span class="font-semibold">Suites | Offices | Retail</span><br><span class="text-sm sm:text-base">套房 | 办公室 | 零售</span></p>
+                </div>
+                <div class="flex items-center p-3 bg-cyan-100 rounded-lg shadow-sm">
+                    <span class="text-cyan-600 mr-2 flex-shrink-0 text-xl sm:text-2xl">📍</span>
+                    <p>Prime Seafront Location at Likas Bay<br><span class="text-sm sm:text-base">里卡士湾黄金海滨地段</span></p>
+                </div>
+                <div class="flex items-center p-3 bg-cyan-100 rounded-lg shadow-sm">
+                    <span class="text-cyan-600 mr-2 flex-shrink-0 text-xl sm:text-2xl">✅</span>
+                    <p>Direct Access to Sabah’s Iconic 7km Coastal Walkway<br><span class="text-sm sm:text-base">直通沙巴标志性7公里海滨步道</span></p>
+                </div>
+                <div class="flex items-center p-3 bg-cyan-100 rounded-lg shadow-sm">
+                    <span class="text-cyan-600 mr-2 flex-shrink-0 text-xl sm:text-2xl">💰</span>
+                    <p><span class="font-semibold">From RM276,250 | RM650 psf</span><br><span class="text-sm sm:text-base">从RM276,250起 | RM650每平方尺</span></p>
+                </div>
+                <div class="flex items-center p-3 bg-cyan-100 rounded-lg shadow-sm">
+                    <span class="text-cyan-600 mr-2 flex-shrink-0 text-xl sm:text-2xl">✔</span>
+                    <p><span class="font-semibold">Included:</span> Aircon, water heater, Kitchen cabinets<br><span class="text-sm sm:text-base">附送：空调、热水器、厨房橱柜</span></p>
+                </div>
+            </div>
+            <p class="text-center text-lg sm:text-xl mt-6 font-medium text-gray-700 italic">
+                More than a launch — it’s a lifestyle shift.<br><span class="text-base sm:text-lg font-normal">不只是推介，更是生活方式的转变。</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Selling Points Section -->
+    <section class="container mx-auto px-4 py-8 md:py-16">
+        <h2 class="text-2xl sm:text-4xl font-bold text-center text-teal-800 mb-8">
+            Unrivaled Selling Points & Investment Potential<br><span class="text-xl sm:text-3xl font-semibold">无与伦比的卖点与投资潜力</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-5 flex flex-col items-center text-center border border-teal-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="p-3 bg-orange-100 rounded-full mb-3">
+                    <span class="text-orange-600 text-2xl sm:text-3xl">💵</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-semibold text-orange-800 mb-2">Unlock High Rental Yields<br><span class="text-base">高租金回报</span></h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Generate RM2,000+ Monthly Rental Income! Our professional Airbnb Management Team ensures hassle-free income.<br><span class="text-xs">每月租金收入RM2,000+！专业Airbnb管理团队，轻松赚取收入。</span></p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-5 flex flex-col items-center text-center border border-teal-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="p-3 bg-orange-100 rounded-full mb-3">
+                    <span class="text-orange-600 text-2xl sm:text-3xl">👁</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-semibold text-orange-800 mb-2">Unobstructed Panoramas Forever<br><span class="text-base">永久无遮挡海景</span></h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Enjoy permanent, breathtaking sea views – unlike SICC, The V's strategic positioning ensures no future 'sea bedding' obstructions. Even non-sea view units offer pleasant courtyard views, mirroring high occupancy rates seen in similar developments.<br><span class="text-xs">尽享永久壮丽海景 – 不同于SICC，The V的战略位置确保未来无遮挡。即使非海景单位也享有宜人庭院景观，入住率媲美同类发展项目。</span></p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-5 flex flex-col items-center text-center border border-teal-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="p-3 bg-orange-100 rounded-full mb-3">
+                    <span class="text-orange-600 text-2xl sm:text-3xl">🏢</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-semibold text-orange-800 mb-2">Commercial Advantage (Airbnb Ready)<br><span class="text-base">商业优势（适合Airbnb）</span></h3>
+                <p class="text-sm text-gray-600 leading-relaxed">As a commercial title, The V offers full flexibility for lucrative short-term rentals, capitalizing on Kota Kinabalu's booming tourism.<br><span class="text-xs">作为商业产权，The V提供灵活的短期租赁（如Airbnb），充分利用亚庇蓬勃发展的旅游业。</span></p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-5 flex flex-col items-center text-center border border-teal-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="p-3 bg-orange-100 rounded-full mb-3">
+                    <span class="text-orange-600 text-2xl sm:text-3xl">🗺</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-semibold text-orange-800 mb-2">Integrated Lifestyle & Convenience<br><span class="text-base">综合生活与便利</span></h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Live, Work, Play – All in one address. Experience the ultimate convenience with direct access to offices, diverse retail, and the vibrant Coastal Walkway – creating a dynamic community at your doorstep.<br><span class="text-xs">生活、工作、娱乐一站式。直通办公室、多元零售和海滨步道，家门口即是活力社区。</span></p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-5 flex flex-col items-center text-center border border-teal-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="p-3 bg-orange-100 rounded-full mb-3">
+                    <span class="text-orange-600 text-2xl sm:text-3xl">✅</span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-semibold text-orange-800 mb-2">Move-In Ready & Value Added<br><span class="text-base">即买即住，增值潜力</span></h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Each unit includes air conditioning, water heater, and kitchen cabinets – minimizing upfront costs and maximizing immediate enjoyment or rental readiness.<br><span class="text-xs">每单位附送空调、热水器和厨房橱柜 – 减少前期成本，即刻享受或出租。</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="container mx-auto px-4 py-8 md:py-16">
+        <h2 class="text-2xl sm:text-4xl font-bold text-center text-teal-800 mb-8">
+            Competitive Edge: The V vs. The Market<br><span class="text-xl sm:text-3xl font-semibold">竞争优势：The V 对比市场</span>
+        </h2>
+        <!-- Desktop/Tablet Table View (hidden on mobile) -->
+        <div class="overflow-x-auto bg-white rounded-2xl shadow-xl border border-teal-200 hidden sm:block">
+            <table class="min-w-full divide-y divide-teal-200">
+                <thead class="bg-orange-50">
+                    <tr>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider rounded-tl-2xl">
+                            Criteria<br><span class="text-xs">标准</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            The V (Proposed)<br><span class="text-xs">The V (拟建)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Jesselton Quay (Completed)<br><span class="text-xs">Jesselton Quay (已竣工)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            The Shore (Progressing/Selling)<br><span class="text-xs">The Shore (在建/销售中)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider rounded-tr-2xl">
+                            Jesselton Docklands (Progressing/Selling)<br><span class="text-xs">Jesselton Docklands (在建/销售中)</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-teal-200">
+                    <tr class="bg-white">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Size (sqft)<br><span class="text-xs">面积 (平方尺)</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            425 - 1090
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            522
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            409
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            351
+                        </td>
+                    </tr>
+                    <tr class="bg-cyan-50">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Price (RM)<br><span class="text-xs">价格 (RM)</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            From RM276,250 (RM650 psf)
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            RM630k
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            RM520k
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            RM485k
+                        </td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Status<br><span class="text-xs">状态</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            New Launch (Future-proof Design)<br><span class="text-xs">新推介 (未来设计)</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Under Construction<br><span class="text-xs">在建中</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Under Construction<br><span class="text-xs">在建中</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Progressing/Selling<br><span class="text-xs">在建/销售中</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-cyan-50">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Key Differentiator<br><span class="text-xs">主要区别</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Direct Coastal Walk Access, Dedicated Airbnb Mgt, Unobstructed Sea Views, Integrated Development<br><span class="text-xs">直通海滨步道，专业Airbnb管理，无遮挡海景，综合发展</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Iconic Waterfront, High Occupancy<br><span class="text-xs">标志性海滨，高入住率</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Central Location, Retail Component<br><span class="text-xs">中心地段，零售部分</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Strategic location, Modern design<br><span class="text-xs">战略位置，现代设计</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Airbnb Rate (RM)<br><span class="text-xs">Airbnb日租 (RM)</span>
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            Projected RM250-320/day (avg.)
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            RM400-500/day
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            RM280/day
+                        </td>
+                        <td class="px-3 py-2 whitespace-normal text-sm text-gray-800">
+                            N/A<br><span class="text-xs">不适用</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Mobile Stacked Card View for Comparison Table -->
+        <div class="block sm:hidden">
+            <h3 class="text-lg font-semibold text-teal-700 mb-4 text-center">The V vs. The Market Comparison</h3>
+            <!-- The V (Proposed) Card -->
+            <div class="mobile-card">
+                <h4 class="text-base font-bold text-teal-800 mb-2">The V (Proposed) / The V (拟建)</h4>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Size (sqft) / 面积 (平方尺)</span>
+                    <span class="mobile-card-value">425 - 1090</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Price (RM) / 价格 (RM)</span>
+                    <span class="mobile-card-value">From RM276,250 (RM650 psf)</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Status / 状态</span>
+                    <span class="mobile-card-value">New Launch (Future-proof Design) / 新推介 (未来设计)</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Key Differentiator / 主要区别</span>
+                    <span class="mobile-card-value">Direct Coastal Walk Access, Dedicated Airbnb Mgt, Unobstructed Sea Views, Integrated Development / 直通海滨步道，专业Airbnb管理，无遮挡海景，综合发展</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Airbnb Rate (RM) / Airbnb日租 (RM)</span>
+                    <span class="mobile-card-value">Projected RM250-320/day (avg.)</span>
+                </div>
+            </div>
+
+            <!-- Jesselton Quay (Completed) Card -->
+            <div class="mobile-card">
+                <h4 class="text-base font-bold text-teal-800 mb-2">Jesselton Quay (Completed) / Jesselton Quay (已竣工)</h4>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Size (sqft) / 面积 (平方尺)</span>
+                    <span class="mobile-card-value">522</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Price (RM) / 价格 (RM)</span>
+                    <span class="mobile-card-value">RM630k</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Status / 状态</span>
+                    <span class="mobile-card-value">Under Construction / 在建中</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Key Differentiator / 主要区别</span>
+                    <span class="mobile-card-value">Iconic Waterfront, High Occupancy / 标志性海滨，高入住率</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Airbnb Rate (RM) / Airbnb日租 (RM)</span>
+                    <span class="mobile-card-value">RM400-500/day</span>
+                </div>
+            </div>
+
+            <!-- The Shore (Progressing/Selling) Card -->
+            <div class="mobile-card">
+                <h4 class="text-base font-bold text-teal-800 mb-2">The Shore (Progressing/Selling) / The Shore (在建/销售中)</h4>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Size (sqft) / 面积 (平方尺)</span>
+                    <span class="mobile-card-value">409</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Price (RM) / 价格 (RM)</span>
+                    <span class="mobile-card-value">RM520k</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Status / 状态</span>
+                    <span class="mobile-card-value">Under Construction / 在建中</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Key Differentiator / 主要区别</span>
+                    <span class="mobile-card-value">Central Location, Retail Component / 中心地段，零售部分</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Airbnb Rate (RM) / Airbnb日租 (RM)</span>
+                    <span class="mobile-card-value">RM280/day</span>
+                </div>
+            </div>
+
+            <!-- Jesselton Docklands (Progressing/Selling) Card -->
+            <div class="mobile-card">
+                <h4 class="text-base font-bold text-teal-800 mb-2">Jesselton Docklands (Progressing/Selling) / Jesselton Docklands (在建/销售中)</h4>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Size (sqft) / 面积 (平方尺)</span>
+                    <span class="mobile-card-value">351</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Price (RM) / 价格 (RM)</span>
+                    <span class="mobile-card-value">RM485k</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Status / 状态</span>
+                    <span class="mobile-card-value">Progressing/Selling / 在建/销售中</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Key Differentiator / 主要区别</span>
+                    <span class="mobile-card-value">Strategic location, Modern design / 战略位置，现代设计</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Airbnb Rate (RM) / Airbnb日租 (RM)</span>
+                    <span class="mobile-card-value">N/A / 不适用</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Roadmap Section -->
+    <section class="container mx-auto px-4 py-8 md:py-16">
+        <h2 class="text-2xl sm:text-4xl font-bold text-center text-teal-800 mb-8">
+            Smart Investment: Positive Cash Flow Potential<br><span class="text-xl sm:text-3xl font-semibold">精明投资：正现金流潜力</span>
+        </h2>
+        <!-- Desktop/Tablet Table View (hidden on mobile) -->
+        <div class="overflow-x-auto bg-white rounded-2xl shadow-xl border border-teal-200 hidden sm:block">
+            <table class="min-w-full divide-y divide-teal-200">
+                <thead class="bg-orange-50">
+                    <tr>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider rounded-tl-2xl">
+                            Unit Type<br><span class="text-xs">单位类型</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Size (sqft)<br><span class="text-xs">面积 (平方尺)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Est. Selling Price (RM)<br><span class="text-xs">预估售价 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            80% Loan (RM)<br><span class="text-xs">80%贷款 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Monthly Loan Repayment (RM)<br><span class="text-xs">每月贷款还款 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Monthly Maint. (RM)<br><span class="text-xs">每月管理费 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Total Monthly Outgoings (RM)<br><span class="text-xs">每月总支出 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-center text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider" colspan="2">
+                            Airbnb Rental<br><span class="text-xs">Airbnb租金</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-center text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider rounded-tr-2xl" colspan="2">
+                            Traditional Rental<br><span class="text-xs">传统租金</span>
+                        </th>
+                    </tr>
+                    <tr class="bg-orange-50">
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider"></th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Avg. Daily Rate (RM)<br><span class="text-xs">平均日租 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Net Monthly (RM)<br><span class="text-xs">每月净收入 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Cash Flow (RM)<br><span class="text-xs">现金流 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Monthly Rental (RM)<br><span class="text-xs">每月租金 (RM)</span>
+                        </th>
+                        <th scope="col" class="px-3 py-2 text-left text-xs sm:text-sm font-medium text-orange-600 uppercase tracking-wider">
+                            Cash Flow (RM)<br><span class="text-xs">现金流 (RM)</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-teal-200">
+                    <tr class="bg-white">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            Studio
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            425
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            276,250
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            221,000
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~1,118
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            127.50
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~1,245.50
+                        </td>
+                        <!-- Airbnb Data -->
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            250
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~4,200
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-semibold text-emerald-700">
+                            ~2,954.50
+                        </td>
+                        <!-- Traditional Rental Data -->
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~1,300
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-semibold text-emerald-700">
+                            ~54.50
+                        </td>
+                    </tr>
+                    <tr class="bg-cyan-50">
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                            1-Bedroom
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            500
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            325,000
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            260,000
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~1,317
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            150
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~1,467
+                        </td>
+                        <!-- Airbnb Data -->
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            320
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~5,376
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-semibold text-emerald-700">
+                            ~3,909
+                        </td>
+                        <!-- Traditional Rental Data -->
+                        <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-800">
+                            ~2,000
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-semibold text-emerald-700">
+                            ~533
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="p-4 text-xs sm:text-sm text-gray-500 italic">
+                Disclaimer: All figures are estimates based on current market conditions and assumptions (30-year loan, 4.5% interest, 70% Airbnb occupancy, 20% Airbnb management fee, RM0.30 psf maintenance), subject to change. Traditional rental cash flow assumes no significant management fees.<br><span class="text-xxs sm:text-xs">免责声明：所有数据均为基于当前市场状况和假设（30年贷款，4.5%利率，70% Airbnb入住率，20% Airbnb管理费，RM0.30每平方尺管理费）的估算，可能随时更改。传统租金现金流假设无重大管理费。</span>
+            </p>
+        </div>
+
+        <!-- Mobile Stacked Card View for Financial Roadmap -->
+        <div class="block sm:hidden">
+            <h3 class="text-lg font-semibold text-teal-700 mb-4 text-center">Financial Overview (Mobile)</h3>
+            <!-- Studio Unit Card -->
+            <div class="mobile-card">
+                <h4 class="text-base font-bold text-teal-800 mb-2">Studio Unit / 单间公寓</h4>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Size (sqft) / 面积 (平方尺)</span>
+                    <span class="mobile-card-value">425</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Est. Selling Price (RM) / 预估售价 (RM)</span>
+                    <span class="mobile-card-value">276,250</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">80% Loan (RM) / 80%贷款 (RM)</span>
+                    <span class="mobile-card-value">221,000</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Monthly Loan Repayment (RM) / 每月贷款还款 (RM)</span>
+                    <span class="mobile-card-value">~1,118</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Monthly Maint. (RM) / 每月管理费 (RM)</span>
+                    <span class="mobile-card-value">127.50</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Total Monthly Outgoings (RM) / 每月总支出 (RM)</span>
+                    <span class="mobile-card-value">~1,245.50</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Airbnb Avg. Daily Rate (RM) / Airbnb平均日租 (RM)</span>
+                    <span class="mobile-card-value font-bold text-orange-600">250</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Airbnb Net Monthly (RM) / Airbnb每月净收入 (RM)</span>
+                    <span class="mobile-card-value font-bold text-orange-600">~4,200</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Airbnb Cash Flow (RM) / Airbnb现金流 (RM)</span>
+                    <span class="mobile-card-value font-bold text-emerald-700 positive-flow">~2,954.50</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Traditional Monthly Rental (RM) / 传统每月租金 (RM)</span>
+                    <span class="mobile-card-value font-bold text-orange-600">~1,300</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Traditional Cash Flow (RM) / 传统现金流 (RM)</span>
+                    <span class="mobile-card-value font-bold text-emerald-700 positive-flow">~54.50</span>
+                </div>
+            </div>
+
+            <!-- 1-Bedroom Unit Card -->
+            <div class="mobile-card">
+                <h4 class="text-base font-bold text-teal-800 mb-2">1-Bedroom Unit / 一卧室单位</h4>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Size (sqft) / 面积 (平方尺)</span>
+                    <span class="mobile-card-value">500</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Est. Selling Price (RM) / 预估售价 (RM)</span>
+                    <span class="mobile-card-value">325,000</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">80% Loan (RM) / 80%贷款 (RM)</span>
+                    <span class="mobile-card-value">260,000</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Monthly Loan Repayment (RM) / 每月贷款还款 (RM)</span>
+                    <span class="mobile-card-value">~1,317</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Monthly Maint. (RM) / 每月管理费 (RM)</span>
+                    <span class="mobile-card-value">150</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label">Total Monthly Outgoings (RM) / 每月总支出 (RM)</span>
+                    <span class="mobile-card-value">~1,467</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Airbnb Avg. Daily Rate (RM) / Airbnb平均日租 (RM)</span>
+                    <span class="mobile-card-value font-bold text-orange-600">320</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Airbnb Net Monthly (RM) / Airbnb每月净收入 (RM)</span>
+                    <span class="mobile-card-value font-bold text-orange-600">~5,376</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Airbnb Cash Flow (RM) / Airbnb现金流 (RM)</span>
+                    <span class="mobile-card-value font-bold text-emerald-700 positive-flow">~3,909</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Traditional Monthly Rental (RM) / 传统每月租金 (RM)</span>
+                    <span class="mobile-card-value font-bold text-orange-600">~2,000</span>
+                </div>
+                <div class="mobile-card-item">
+                    <span class="mobile-card-label font-bold text-orange-600">Traditional Cash Flow (RM) / 传统现金流 (RM)</span>
+                    <span class="mobile-card-value font-bold text-emerald-700 positive-flow">~533</span>
+                </div>
+            </div>
+        </div>
+        <p class="p-4 text-xs sm:text-sm text-gray-500 italic">
+            Disclaimer: All figures are estimates based on current market conditions and assumptions (30-year loan, 4.5% interest, 70% Airbnb occupancy, 20% Airbnb management fee, RM0.30 psf maintenance), subject to change. Traditional rental cash flow assumes no significant management fees.<br><span class="text-xxs sm:text-xs">免责声明：所有数据均为基于当前市场状况和假设（30年贷款，4.5%利率，70% Airbnb入住率，20% Airbnb管理费，RM0.30每平方尺管理费）的估算，可能随时更改。传统租金现金流假设无重大管理费。</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-teal-800 text-white py-8 md:py-16 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl sm:text-4xl font-bold mb-4">
+                Don't Miss This Investment Opportunity!<br><span class="text-xl sm:text-3xl font-semibold">勿错过此投资良机！</span>
+            </h2>
+            <p class="text-lg sm:text-2xl mb-6">
+                Secure your prime piece of Likas Bay. Contact us today for an exclusive viewing and detailed financial consultation.<br><span class="text-base sm:text-xl">立即锁定里卡士湾黄金地段。今天就联系我们，获取专属看房和详细财务咨询。</span>
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-base sm:text-lg">
+                <a href="tel:+60108323229" class="flex items-center bg-white text-teal-800 px-5 py-2 rounded-full font-semibold shadow-md hover:bg-gray-100 transition-colors duration-300">
+                    📞 +60 10-832 3229 <span class="ml-2 text-sm">(电话)</span>
+                </a>
+                <a href="mailto:feebee.properties@outlook.com" class="flex items-center bg-white text-teal-800 px-5 py-2 rounded-full font-semibold shadow-md hover:bg-gray-100 transition-colors duration-300">
+                    📧 feebee.properties@outlook.com <span class="ml-2 text-sm">(邮箱)</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100063582181045" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white text-teal-800 px-5 py-2 rounded-full font-semibold shadow-md hover:bg-gray-100 transition-colors duration-300">
+                    📘 Facebook Page <span class="ml-2 text-sm">(脸书主页)</span>
+                </a>
+            </div>
+            <p class="mt-6 text-xs sm:text-sm text-teal-200">
+                Phoebe Property Listing
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
