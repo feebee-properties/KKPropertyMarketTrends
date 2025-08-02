@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rxxxxxxxx Property Market Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="text-[#e2e8f0]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#06D6A0] mb-2">Rxxxxxxxx Property Market Insights</h1>
+            <p class="text-lg text-[#118AB2]">An analysis of transaction data from 2022-2025</p>
+        </header>
+
+        <section id="snapshot" class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#2d3748] rounded-lg shadow-md p-6 text-center flex flex-col justify-center items-center">
+                    <span class="text-4xl text-[#FF6B6B] mb-2">💰</span>
+                    <h3 class="text-xl font-semibold text-[#FFD166] mb-2">Average Price</h3>
+                    <p id="avgPrice" class="text-3xl font-bold text-[#FF6B6B]">-</p>
+                </div>
+                <div class="bg-[#2d3748] rounded-lg shadow-md p-6 text-center flex flex-col justify-center items-center">
+                    <span class="text-4xl text-[#FFD166] mb-2">🏠</span>
+                    <h3 class="text-xl font-semibold text-[#FFD166] mb-2">Average Size</h3>
+                    <p id="avgSize" class="text-3xl font-bold text-[#FFD166]">-</p>
+                </div>
+                <div class="bg-[#2d3748] rounded-lg shadow-md p-6 text-center flex flex-col justify-center items-center">
+                    <span class="text-4xl text-[#06D6A0] mb-2">📈</span>
+                    <h3 class="text-xl font-semibold text-[#FFD166] mb-2">Total Transactions</h3>
+                    <p id="totalTransactions" class="text-3xl font-bold text-[#06D6A0]">-</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trends" class="mb-12">
+            <div class="bg-[#2d3748] rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-[#FFD166] mb-2">Price Fluctuation Over Time</h2>
+                <p class="text-gray-300 mb-6">This chart tracks the movement of transacted property prices, revealing market trends from 2022 to 2025. The data shows a period of volatility with notable peaks and troughs, suggesting a dynamic and responsive market environment.</p>
+                <div class="chart-container">
+                    <canvas id="priceTrendChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <section id="distribution">
+                <div class="bg-[#2d3748] rounded-lg shadow-md p-6 h-full">
+                    <h2 class="text-2xl font-bold text-[#FFD166] mb-2">Transactions by Block</h2>
+                    <p class="text-gray-300 mb-6">Block I emerges as a clear hotspot for transactions, significantly outpacing other blocks in sales volume.</p>
+                    <div class="chart-container">
+                        <canvas id="blockDistributionChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            <section id="relationship">
+                <div class="bg-[#2d3748] rounded-lg shadow-md p-6 h-full">
+                    <h2 class="text-2xl font-bold text-[#FFD166] mb-2">Price vs. Size</h2>
+                    <p class="text-gray-300 mb-6">This scatter plot shows a clear positive correlation, where larger properties tend to command higher prices.</p>
+                    <div class="chart-container">
+                        <canvas id="priceVsSizeChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    
+    <footer class="bg-[#073B4C] text-white pt-12 pb-6 mt-12 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-2 text-[#06D6A0]">Don't Miss This Investment Opportunity!</h2>
+            <p class="text-lg mb-6">Are you here for investing? Looking for a new home? Or a place to generate income?</p>
+            <p class="text-lg mb-6">您是想投资、寻找新家还是想找个能带来收入的地方？</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                <div class="bg-white text-black py-4 px-8 rounded-full shadow-md flex items-center space-x-2 w-full md:w-auto">
+                    <span class="text-[#118AB2] text-xl">📞</span>
+                    <div>
+                        <p class="font-bold text-lg">+60 10-832 3229</p>
+                        <p class="text-xs text-gray-500">(电话)</p>
+                    </div>
+                </div>
+                <div class="bg-white text-black py-4 px-8 rounded-full shadow-md flex items-center space-x-2 w-full md:w-auto">
+                    <span class="text-[#118AB2] text-xl">📧</span>
+                    <div>
+                        <p class="font-bold text-lg">feebee.properties@outlook.com</p>
+                        <p class="text-xs text-gray-500">(邮箱)</p>
+                    </div>
+                </div>
+                <div class="bg-white text-black py-4 px-8 rounded-full shadow-md flex items-center space-x-2 w-full md:w-auto">
+                    <span class="text-[#118AB2] text-xl">📘</span>
+                    <div>
+                        <p class="font-bold text-lg">Facebook Page</p>
+                        <p class="text-xs text-gray-500">(脸书主页)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-gray-400 mt-8 text-sm">Phoebe Property Listing</p>
+        </div>
+    </footer>
+
+    <script>
+        const rawData = [
+            { date: '14/Jan/2025', sqft: 1083.92, price: 405000, block: 'E', level: '1' },
+            { date: '15/Nov/2024', sqft: 1083.92, price: 350000, block: 'E', level: '2' },
+            { date: '14/Oct/2024', sqft: 1083.92, price: 199000, block: 'I', level: '2' },
+            { date: '21/Jun/2024', sqft: 1083.92, price: 450000, block: '-', level: '-' },
+            { date: '13/May/2024', sqft: 1083.92, price: 355000, block: '-', level: '3' },
+            { date: '08/May/2024', sqft: 1083.92, price: 395000, block: 'B', level: 'G' },
+            { date: '03/May/2024', sqft: 1083.92, price: 483000, block: '-', level: '-' },
+            { date: '18/Apr/2024', sqft: 1288.96, price: 300000, block: '-', level: '-' },
+            { date: '06/Feb/2024', sqft: 1288.96, price: 400000, block: 'A', level: '3' },
+            { date: '21/Feb/2023', sqft: 1083.92, price: 390000, block: '-', level: '1' },
+            { date: '29/Dec/2022', sqft: 1228.16, price: 365000, block: 'I', level: '2' },
+            { date: '29/Dec/2022', sqft: 1228.16, price: 365000, block: 'K', level: '2' },
+            { date: '11/Oct/2022', sqft: 1033.33, price: 365000, block: 'E', level: '2' },
+            { date: '29/Aug/2022', sqft: 1033.33, price: 187500, block: 'I', level: '2' },
+            { date: '29/Aug/2022', sqft: 1033.33, price: 187500, block: 'I', level: '2' },
+            { date: '29/Aug/2022', sqft: 1033.33, price: 375000, block: 'I', level: '2' },
+            { date: '15/Aug/2022', sqft: 1033.33, price: 370000, block: '-', level: 'G' }
+        ];
+
+        const monthMap = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+        
+        const processedData = rawData.map(d => {
+            const parts = d.date.split('/');
+            return {
+                ...d,
+                dateObj: new Date(parseInt(parts[2]), monthMap[parts[1]], parseInt(parts[0]))
+            };
+        }).sort((a, b) => a.dateObj - b.dateObj);
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines.filter(line => line.length > 0);
+        };
+
+        const calculateLinearRegression = (data) => {
+            const n = data.length;
+            let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0;
+            data.forEach(d => {
+                sumX += d.x;
+                sumY += d.y;
+                sumXY += d.x * d.y;
+                sumXX += d.x * d.x;
+            });
+
+            const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
+            const intercept = (sumY - slope * sumX) / n;
+            return { slope, intercept };
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const totalTransactions = processedData.length;
+            const totalSumPrice = processedData.reduce((sum, d) => sum + d.price, 0);
+            const totalSumSqft = processedData.reduce((sum, d) => sum + d.sqft, 0);
+            const avgPrice = totalSumPrice / totalTransactions;
+            const avgSize = totalSumSqft / totalTransactions;
+
+            document.getElementById('totalTransactions').textContent = totalTransactions;
+            document.getElementById('avgPrice').textContent = `RM ${avgPrice.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+            document.getElementById('avgSize').textContent = `${avgSize.toFixed(2)} sq. ft.`;
+
+            const priceTrendCtx = document.getElementById('priceTrendChart').getContext('2d');
+            new Chart(priceTrendCtx, {
+                type: 'line',
+                data: {
+                    labels: processedData.map(d => d.date),
+                    datasets: [{
+                        label: 'Transacted Price (RM)',
+                        data: processedData.map(d => d.price),
+                        borderColor: '#FF6B6B',
+                        backgroundColor: 'rgba(255, 107, 107, 0.2)',
+                        fill: true,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: { display: true, text: 'Price (RM)' },
+                            ticks: {
+                                callback: function(value) {
+                                    return 'RM ' + (value / 1000) + 'k';
+                                }
+                            }
+                        },
+                        x: {
+                            title: { display: true, text: 'Transaction Date' },
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { title: tooltipTitleCallback } }
+                    }
+                }
+            });
+
+            const blockCounts = processedData.reduce((acc, d) => {
+                if (d.block !== '-') {
+                    acc[d.block] = (acc[d.block] || 0) + 1;
+                }
+                return acc;
+            }, {});
+            
+            const blockDistributionCtx = document.getElementById('blockDistributionChart').getContext('2d');
+            new Chart(blockDistributionCtx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(blockCounts),
+                    datasets: [{
+                        label: 'Number of Transactions',
+                        data: Object.values(blockCounts),
+                        backgroundColor: ['#118AB2', '#06D6A0', '#FFD166', '#FF6B6B', '#073B4C'],
+                        borderColor: '#ffffff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { title: tooltipTitleCallback } }
+                    }
+                }
+            });
+
+            const scatterData = processedData.map(d => ({ x: d.sqft, y: d.price }));
+            const regression = calculateLinearRegression(scatterData);
+            const trendLineData = scatterData.map(d => ({
+                x: d.x,
+                y: d.x * regression.slope + regression.intercept
+            }));
+
+            const priceVsSizeCtx = document.getElementById('priceVsSizeChart').getContext('2d');
+            new Chart(priceVsSizeCtx, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Transactions',
+                        data: scatterData,
+                        backgroundColor: '#FF6B6B'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Trend Line',
+                        data: trendLineData,
+                        borderColor: '#06D6A0',
+                        backgroundColor: 'transparent',
+                        pointRadius: 0,
+                        tension: 0.4,
+                        borderDash: [5, 5]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            position: 'bottom',
+                            title: {
+                                display: true,
+                                text: 'Size (sq. ft.)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Price (RM)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return 'RM ' + (value / 1000) + 'k';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: { 
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                boxWidth: 10,
+                                usePointStyle: true,
+                            }
+                        },
+                        tooltip: { 
+                            callbacks: { 
+                                title: tooltipTitleCallback,
+                                label: function(context) {
+                                    if (context.datasetIndex === 0) {
+                                        let label = `Size: ${context.parsed.x.toFixed(2)} sq. ft.`;
+                                        if (label) {
+                                            label += ' - ';
+                                        }
+                                        if (context.parsed.y !== null) {
+                                            label += `Price: RM ${context.parsed.y.toLocaleString('en-US')}`;
+                                        }
+                                        return label;
+                                    }
+                                    return '';
+                                }
+                            } 
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
